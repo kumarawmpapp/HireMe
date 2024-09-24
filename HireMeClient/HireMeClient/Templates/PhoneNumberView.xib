@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneNumberView" customModule="HireMeiPad" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="GmD-dO-hD3" id="xMK-hu-J43"/>
+                <outlet property="imgCountry" destination="drn-oy-0lA" id="Yez-Co-4lx"/>
+                <outlet property="lblCountryCode" destination="ukl-8G-u7T" id="ANV-eD-6r6"/>
+                <outlet property="txtMobileNumber" destination="Rdz-ED-BMR" id="lpi-u8-TJs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmD-dO-hD3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lk" translatesAutoresizingMaskIntoConstraints="NO" id="drn-oy-0lA" userLabel="countryflag">
+                    <rect key="frame" x="21" y="22.5" width="22" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="aiG-hQ-eTp"/>
+                        <constraint firstAttribute="width" constant="22" id="o4e-mj-SBy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="+94" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-8G-u7T" userLabel="countrycode">
+                    <rect key="frame" x="52" y="17" width="23.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-ED-BMR" userLabel="mobile" customClass="BaseTextField" customModule="HireMeiPad" customModuleProvider="target">
+                    <rect key="frame" x="100" y="12" width="182" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Rdz-ED-BMR" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="GmD-dO-hD3" secondAttribute="trailing" constant="-10" id="6eO-sG-rVi"/>
+                <constraint firstItem="ukl-8G-u7T" firstAttribute="centerY" secondItem="drn-oy-0lA" secondAttribute="centerY" id="BCQ-rJ-86h"/>
+                <constraint firstItem="Rdz-ED-BMR" firstAttribute="centerY" secondItem="ukl-8G-u7T" secondAttribute="centerY" id="CrB-DC-LF9"/>
+                <constraint firstItem="drn-oy-0lA" firstAttribute="leading" secondItem="GmD-dO-hD3" secondAttribute="leading" constant="21" id="Dx2-Qh-RwL"/>
+                <constraint firstItem="drn-oy-0lA" firstAttribute="centerY" secondItem="GmD-dO-hD3" secondAttribute="centerY" id="MrN-f5-fv4"/>
+                <constraint firstItem="ukl-8G-u7T" firstAttribute="leading" secondItem="drn-oy-0lA" secondAttribute="trailing" constant="9" id="Tzo-TU-Dyy"/>
+                <constraint firstItem="Rdz-ED-BMR" firstAttribute="leading" secondItem="ukl-8G-u7T" secondAttribute="trailing" constant="24.5" id="YaH-rb-jch"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-11.5" y="-651"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lk" width="400" height="200"/>
+    </resources>
+</document>
