@@ -11,7 +11,7 @@ import Foundation
 class ApplicationSettings {
     // Google
     static var googleAPIUrl = "https://maps.googleapis.com/maps/api/"
-    static let googleAPIKey = "AIzaSyB728O8K0lWEjVVJl1NfErEtImmgt4Jco4"
+    static let googleAPIKey = ""
     static let googleAPIResponseFormat = "json"
     static let googleDirectionAPIUrl = ApplicationSettings.googleAPIUrl + "directions/" + ApplicationSettings.googleAPIResponseFormat
     
